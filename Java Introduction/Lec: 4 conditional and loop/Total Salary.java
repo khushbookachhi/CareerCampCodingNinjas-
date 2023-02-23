@@ -67,3 +67,33 @@ pf = 11% of Rs. 4567 = Rs. 502.37
 
 Since, the grade is 'B', we take allowance as Rs. 1500.
 On substituting these values to the formula of totalSalary, we get Rs. 8761.53 and now rounding it off will result in Rs. 8762 and hence the Answer.
+    import java.util.Scanner;
+public class Solution {
+
+
+	public static void main(String[] args) {
+		
+			Scanner s= new Scanner(System.in);
+		int n;
+		n= s.nextInt();
+		int i=1;
+		while(i<=n){
+		    int space=1;
+		    while(space<=(n-i)){
+		        System.out.print(" ");
+		        space= space+1;
+		    }
+		    int star=1;
+		    while(star<=i){
+		        System.out.print(star);
+		        star= star+1;
+		    }
+		    i=i+1;
+		    	System.out.println();
+		}
+
+		
+	}
+
+}
+
