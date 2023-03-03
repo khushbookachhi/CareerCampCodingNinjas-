@@ -27,20 +27,20 @@ public class Main {
 		Scanner s= new Scanner(System.in);
 		int n;
 		n= s.nextInt();
-		int i, j;
-		for( i=1; i<=n; i++){
-			int num=1, sum=0;
-			for(j=1; j<=i; j++){
-				System.out.print(num+"");
-				sum=sum+num;
-				if(num<i){
-					System.out.print("+");
-				}
-				num++;
-			}
-			System.out.print("="+sum);
-			System.out.println();
-		}
+		for(int i=1; i<=n; i++){
+    int sum=0;
+   for(int j=1; j<=i; j++){
+       sum+=j;
+       if(j==1){
+       System.out.print(j); }
+       else{
+           System.out.print("+"+j);
+       }
+  
+   }
+     System.out.print("="+sum);   
+    System.out.println();
+}
 
 	}
 }
