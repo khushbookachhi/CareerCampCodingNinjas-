@@ -39,72 +39,51 @@ public class Solution {
     public static void main(String[] args) {
       Scanner s = new Scanner(System.in); 
        	int n= s.nextInt();
-		
-		int m= 2*n+1;
-		int count, j;
-        if(n==0){
-          System.out.println("*");  
-            
-        }
-		for(int i=1; i<=(m+1)/2; i++){
-		  
-		  count=1;
-		 
-		    for( j=1; j<=(2*i-1); j++){
-		          if(j==1){
-		            System.out.print("*");
-		        }
-		  
-		        
-		  if(count<i){
-		          System.out.print(count);
-		               count++;
-		               
-		           }
-		       }
-		   count=count-2;
-		  for( j=1; j<=i-2; j++){
-		   System.out.print(count); 
-		   count--;
-		     if(j==(i-2)){
-		            System.out.print("*");
-		        }
-		  
-		  }
-		  if(i==2){
-		    System.out.print("*");  
-		  }
-		    
-		    System.out.println();
-		}
-		for(int i=(m-n-1); i>=1; i--){
-		     count=1;
-		    for( j=1; j<=(2*i-1); j++){
-		        if(j==1){
-		            System.out.print("*");
-		        }
-		   
-		   if(count<i){
-		   System.out.print(count);
-		    count++;
-		       }
-		           }
-		           count=count-2;
-		  for( j=1; j<=i-2; j++){
-		   System.out.print(count); 
-		   count--;
-		     if(j==(i-2)){
-		            System.out.print("*");
-		        }
-		  
-		  }
-		   if(i==2){
-		    System.out.print("*");  
-		  }
-		    
-		    System.out.println();
-		}
-		
+	    int j;
+	for(int i=1; i<=(n+1); i++){
+	    int count=1;
+	    for( j=1; j<=i; j++){
+	        if(j==1){
+	            System.out.print("*");
+	        }
+	        if(count<i){
+	            System.out.print(count);
+	            count++;
+	        }
+	    }
+	    count=count-2;
+	    for(; j<=(2*i-1); j++){
+	        if(j==(2*i-1)){
+	            System.out.print("*");
+	        }else{
+	            System.out.print(count);
+	            count--;
+	        }
+	    }
+	    System.out.println();
+	}
+	for(int i=n; i>=1; i--){
+	     int count=1;
+	    for( j=1; j<=i; j++){
+	        if(j==1){
+	            System.out.print("*");
+	        }
+	        if(count<i){
+	            System.out.print(count);
+	            count++;
+	        }
+	    }
+	    count=count-2;
+	    for(; j<=(2*i-1); j++){
+	        if(j==(2*i-1)){
+	            System.out.print("*");
+	        }else{
+	            System.out.print(count);
+	            count--;
+	        }
+	    }
+	    System.out.println();
+	}
         
     }
 }
