@@ -30,22 +30,15 @@ public class Solution {
 			Scanner s= new Scanner(System.in);
 		int n;
 		n= s.nextInt();
-		int i=1;
-		while(i<=n){
-		    int space=1;
-		    while(space<=(n-i)){
-		        System.out.print(" ");
-		        space= space+1;
-		    }
-		    int star=1;
-		    while(star<=i){
-		        System.out.print(star);
-		        star= star+1;
-		    }
-		    i=i+1;
-		    	System.out.println();
-		}
-
+		for(int i=1; i<=n; i++){
+    for(int j=1;j<=(n-i); j++){
+        System.out.print(" ");
+    }
+    for(int j=1;j<=i; j++){
+        System.out.print(j);
+    }
+    System.out.println();
+}
 		
 	}
 
