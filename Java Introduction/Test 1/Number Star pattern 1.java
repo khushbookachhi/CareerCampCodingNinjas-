@@ -18,22 +18,16 @@ public class runner {
 	public static void main(String[] args) {
 	Scanner s= new Scanner(System.in);
 int n= s.nextInt();
-int count;
-for(int i=1; i<=n; i++){
-    count=n;
-    for(int j=1; j<=(n-i); j++){
-        System.out.print(count);
-        count--;
-    }
-    System.out.print("*");
-   int digit=i-1;
-    for(int j=1; j<=i-1; j++){
-         
-       System.out.print(digit);  
-       digit--;
-    }
-    System.out.println();
-}
+	for(int i=1; i<=n; i++){
+		    for(int j=n; j>=1; j--){
+		        if(j==i){
+		            System.out.print("*");
+		        }else{
+		        System.out.print(j);
+		        }
+		    }
+		    System.out.println();
+		}
 
 
 
