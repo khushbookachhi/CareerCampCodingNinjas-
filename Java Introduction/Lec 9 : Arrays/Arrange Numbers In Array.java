@@ -66,3 +66,23 @@ Sample Output 2 :
     }
 
 }
+// 	    int n=8, count=1;
+// 	    int arr[]= new int[n];
+// 	for(int i=0; i<=n/2; i++){
+// 	    arr[i]=count;
+// 	    count=count+2;
+// 	    if(count>n && n%2==0){
+// 	        count--;
+// 	    }
+// 	  //  arr[n-1-i]=count++;
+// 	}
+// 	count=count-3;
+// 	for(int i=(n/2)+1; i<n; i++){
+// 	    arr[i]=count;
+// 	    count=count-2;
+	   
+// 	}
+// 	for(int i=0; i<n; i++){
+// 	     System.out.print(arr[i]+" ");
+// 	}
+// 	}
