@@ -51,7 +51,7 @@ Since, both input arrays have two '2's, the intersection of the arrays also have
   public class Solution{  
     
     public static void intersections(int arr1[], int arr2[]) {
-    	int n= arr1.length;
+    	int n= arr1.length; 
         int m= arr2.length;
         int[] arr= new int[n+m];
         int k=0;
