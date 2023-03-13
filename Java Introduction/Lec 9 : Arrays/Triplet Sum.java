@@ -61,3 +61,25 @@ For the second query, we have 5 triplets in total that sum up to 10. They are, (
     }
 
 }
+
+// import java.util.Arrays;
+// class HelloWorld {
+//     public static void main(String[] args) {
+        
+//       int arr[]={3,2,1,4,7,6,5};
+//       Arrays.sort(arr);
+//       int x=12;
+//       int k=0;
+//       for(int i=0; i<arr.length; i++){
+//           int s=i+1, e=arr.length-1;
+//           while(s<e){
+//               if((arr[i]+arr[s]+arr[e])==x){
+//                   k++;
+//                   s++; e--;
+//               }else if((arr[i]+arr[s]+arr[e])>x){
+//                   e--;
+//               }else{
+//                   s++;
+//               }
+//           }
+//       }
