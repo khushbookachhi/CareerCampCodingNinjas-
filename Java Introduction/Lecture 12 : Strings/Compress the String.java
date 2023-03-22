@@ -44,7 +44,8 @@ In the given string 'a' is repeated 3 times, 'b' is repeated 2 times, 'c' is occ
 				if(count>1){
                 number+=count+"";
 				removeDuplicate += str.charAt(i)+number;
-				number="";
+				number="";                                // String str1 = Integer.toString(a);
+					                                   //String str3 = String.valueOf(1234);
 				count=1;}
 				else{
 					removeDuplicate += str.charAt(i);
