@@ -45,3 +45,17 @@ public class Solution {
 		return -1;
 	}
 }
+
+// another solution*****************************************
+//  public static int duplicate(int arr[],int n){
+//         int freq[]= new int[n];
+//         for(int i=0; i<n; i++){
+//             freq[arr[i]]++;
+//         }
+//         for(int i=0; i<n; i++){
+//             if(freq[i]>1){
+//                 return i;
+//             }
+//         }
+//         return 0;
+//     }
