@@ -105,3 +105,23 @@ public class Solution {
 
 	}
 }
+
+// 	int arr[]={1,2,3,4,5,6,7};
+// 	int n= arr.length;
+// 	int sum=12, count=0;
+// 	Arrays.sort(arr);
+// 	int s=0, e=n-1;
+// 	for(int i=0; i<n; i++){
+// 	    s=i+1; e=n-1;
+// 	 while(s<e){
+// 	     if((arr[i]+arr[s]+arr[e])==sum){
+// 	         count++;
+// 	         s++; e--;
+// 	     }else if((arr[i]+arr[s]+arr[e])>sum){
+// 	         e--;
+// 	     }else{
+// 	         s++;
+// 	     }
+// 	 }
+// 	}
+// 	System.out.print(count);
