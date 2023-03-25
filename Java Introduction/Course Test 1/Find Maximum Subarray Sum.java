@@ -51,3 +51,19 @@ public class Solution {
       System.out.print(max_sum);
     }
 }
+
+// public static int maxsum(int[] arr, int k){
+//         int max=0, sum=0;
+//         for(int i=0; i<=arr.length-k; i++){
+//             for(int j=i; j<(i+k); j++){
+//                 sum+=arr[j];
+//             }
+//             if(max<sum){
+//                 max=sum;
+//                 sum=0;
+//             }else{
+//                 sum=0;
+//             }
+//         }
+//         return max;
+//     }
