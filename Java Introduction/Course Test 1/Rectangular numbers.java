@@ -23,20 +23,30 @@ Sample Output :
   public class solution {
 
 	public static void print(int n) {
-int start=0;
-int end=n-1;
-int count=n;
-for(int i=0; i<(2*n-1); i++){
-	for(int j=0; j<(2*n-1); j++){
-		if(i==0 || i==n-1 || j==0 || j==n-1){
-			System.out.print(count);
-		//start++; end--;
+  int arr[][]=new int[2*n-1][2*n-1];
+  int  start=0, end=2*n-2;
+  int size=2*n-1;
+    while(n>0){
+    for(int i=start; i<=(end); i++){
+	for(int j=start; j<=(end); j++){
+		if(i==start || i==end || j==start || j==end){
+			arr[i][j]=n;
+		
 		}
 		
 	}
-	count--;
-	System.out.println();
+
+    }
+    	start++; end--;
+		n--;
+    }
+    for(int i=0; i<(size); i++){
+	for(int j=0; j<(size); j++){
+
+	System.out.print(arr[i][j]);
 }
-	}
+System.out.println();
+
+}
 
 }
