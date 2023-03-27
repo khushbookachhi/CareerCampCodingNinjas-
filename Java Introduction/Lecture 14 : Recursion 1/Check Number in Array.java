@@ -40,3 +40,14 @@ false
 	return check;
 	}
 }
+
+//  public static boolean findX(int arr[], int n, int x, int si){
+      
+//        if(si==n){
+//            return false;
+//        }
+//        if(arr[si]==x){
+//            return true;
+//        }
+//        return findX(arr,n,x,si+1);
+//     }
