@@ -32,3 +32,11 @@ Sample Output 2 :
 		return ans;
 	}
 }
+
+//  public static int sumOfArray(int arr[],int n, int si){
+//         if(si==n){
+//             return 0;
+//         }
+//        int sum=arr[si]+sumOfArray(arr,n,si+1);
+//         return sum;
+//     }
