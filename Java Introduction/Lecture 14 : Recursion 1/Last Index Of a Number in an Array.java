@@ -18,14 +18,14 @@ Sample Output :
 3
   
   public class Solution {
-	public static int findOutput(int a[], int x, int si) {
-		if (si < 0) {
+	public static int findOutput(int a[], int x, int li) {
+		if (li < 0) {
 			return -1;
+		}                                                      //li--->lastIndex
+		if (a[li] == x) {
+			return li;
 		}
-		if (a[si] == x) {
-			return si;
-		}
-		int ans = findOutput(a, x, si - 1);
+		int ans = findOutput(a, x, li - 1);
 		return ans;
 	}
 	public static int lastIndex(int a[], int x) {
