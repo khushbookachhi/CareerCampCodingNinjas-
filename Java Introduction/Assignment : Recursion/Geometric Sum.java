@@ -17,7 +17,7 @@ Sample Output 2 :
 1.93750
 Explanation for Sample Input 1:
 1+ 1/(2^1) + 1/(2^2) + 1/(2^3) = 1.87500
-  
+  import java.lang.Math;
   public class solution {
 
 	public static double findGeometricSum(int k){
@@ -28,3 +28,12 @@ Explanation for Sample Input 1:
 
 	}
 }
+
+//  public static double gemetric(int k){
+//         if(k==0){
+//             return 1;
+//         }
+//         double ans=(1/Math.pow(2,k))+gemetric(k-1);          //set-precision->   System.out.println(String.format("%.5f",ans));
+//         return ans;
+        
+//     }
