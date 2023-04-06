@@ -87,3 +87,46 @@ public class Solution {
         
     }
 }
+
+************ another way///////////////
+		int m=3;
+	int n=m*2+1;
+	
+	for(int i=1; i<=(n/2)+1; i++){
+	    int count=1;
+	    int new1=2;
+	    for(int j=1; j<=2*i-1; j++){
+	       if(j==1 || j==2*i-1){
+	        System.out.print("*"); 
+	       }else if(count<i){
+	          System.out.print(count); 
+	          count++;
+	       }else{
+	           new1=count-new1;
+	           System.out.print(new1); 
+	          new1++;
+	       }
+	    }
+	    System.out.println();
+	}
+	for(int i=n/2; i>=1; i--){
+	   
+	    
+	       int count=1;
+	    int new1=2;
+	    for(int j=1; j<=2*i-1; j++){
+	       if(j==1 || j==2*i-1){
+	        System.out.print("*"); 
+	       }else if(count<i){
+	          System.out.print(count); 
+	          count++;
+	       }else{
+	           new1=count-new1;
+	           System.out.print(new1); 
+	          new1++;
+	       }
+	  
+	    }
+	    System.out.println();
+	    
+	}
