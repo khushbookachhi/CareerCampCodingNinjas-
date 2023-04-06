@@ -29,16 +29,14 @@ public class Main {
 		n= s.nextInt();
 		for(int i=1; i<=n; i++){
     int sum=0;
+  for(int i=1; i<=n; i++){
+   
    for(int j=1; j<=i; j++){
-       sum+=j;
-       if(j==1){
-       System.out.print(j); }
-       else{
-           System.out.print("+"+j);
-       }
-  
+       if(j==i){
+          System.out.print(j+"="+(j*(j+1))/2);  
+       }else{
+     System.out.print(j+"+");  }
    }
-     System.out.print("="+sum);   
     System.out.println();
 }
 
