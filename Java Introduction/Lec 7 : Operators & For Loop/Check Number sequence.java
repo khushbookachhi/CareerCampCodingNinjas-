@@ -85,4 +85,29 @@ public class Main {
 System.out.println("true");
 	}
 }
+// another solution*******????????
+// 		int n=s.nextInt();
+// 		int prev=s.nextInt();
+// 		boolean isDec=true;
+// 		int i=n-1;
+// 		while(i>0){
+// 		    int curr=s.nextInt();
+// 		    if(curr==prev){
+// 		        System.out.println("false");
+// 		        break;
+// 		    }else if(curr<prev){
+// 		        if(isDec==false){
+// 		         System.out.println("false");   
+// 		            break;
+// 		        }
+// 		        prev=curr;
+// 		    }else{
+// 		        prev=curr;
+// 		        isDec=false;
+// 		    }
+// 		    i--;
+// 		}
+// 	if(i==0){
+// 	 System.out.println("true");   
+// 	}
   
